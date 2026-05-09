@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import ProtectedRoute from "./components/ProtectedRoute";
 import CreateStudentPage from "./components/CreateStudentPage";
 import EditStudentPage from "./components/EditStudentPage";
+import Ai from "./components/Ai";
 
 export default function App() {
   return (
@@ -59,6 +60,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <EditStudentPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/ai"
+          element={
+            <ProtectedRoute>
+              <Ai />
             </ProtectedRoute>
           }
         />
